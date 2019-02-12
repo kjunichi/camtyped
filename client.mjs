@@ -38,16 +38,6 @@ const genImage = (imbuf, w, h) => {
     ctx.putImageData(imagedata, 0, 0)
     //console.log(`pidx = ${pidx}`)
     //console.log(`imagedata w,h = ${imagedata.width}, ${imagedata.height}`)
-    const out = fs.createWriteStream('./cam1.png')
-    const stream = canvas.pngStream()
-
-    stream.on('data', (chunk) => {
-        out.write(chunk)
-    })
-
-    stream.on('end', () => {
-        console.log('saved png')
-    })
 
     return canvas
 }
