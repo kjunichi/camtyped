@@ -1,0 +1,2 @@
+# camtyped
+for macOS Mojave
